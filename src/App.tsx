@@ -1,10 +1,6 @@
-import './App.css'
-
-type Todo = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
+import './App.css';
+import { Todo } from './types';
+import TodoItem from './TodoItem';
 
 function App() {
   const todos: Todo[] = [
@@ -17,12 +13,7 @@ function App() {
       <h1>ToDoリスト</h1>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>
-            <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
-              {todo.title}
-            </span>
-            <span> - {todo.completed ? "完了" : "未完了"}</span>
-          </li>
+          <TodoItem key={todo.id} todo={todo} />
         ))}
       </ul>
     </div>

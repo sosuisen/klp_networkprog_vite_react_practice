@@ -1,11 +1,5 @@
 import React from 'react';
-
-// Todo 型の定義
-type Todo = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
+import { Todo } from './types';
 
 // TodoItem コンポーネントのプロパティ型定義
 type TodoItemProps = {
