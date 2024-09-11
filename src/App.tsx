@@ -16,7 +16,7 @@ const initialTodos: Todo[] = [
 
 const App = () => {
 	// useStateでtodosの状態を管理
-	const [todos, setTodos] = useState<Todo[]>(initialTodos);
+	const [todos, setTodos] = useState(initialTodos);
 
 	// タスクの完了/未完了をトグルする関数
 	const toggleTodo = (id: number) => {
