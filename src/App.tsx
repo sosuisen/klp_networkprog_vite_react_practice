@@ -7,6 +7,9 @@ type Todo = {
 const todos: Todo[] = [
 	{ id: 1, title: "ネーム", completed: true },
 	{ id: 2, title: "下書き", completed: false },
+	{ id: 3, title: "ペン入れ", completed: false },
+	{ id: 4, title: "トーン貼り", completed: false },
+	{ id: 5, title: "仕上げ", completed: false },
 ];
 
 const App = () => {
