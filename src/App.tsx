@@ -16,6 +16,7 @@ const App = () => {
 	return (
 		<div>
 			<h1>ToDoリスト</h1>
+			<p>現在のToDoは{todos.length}個。</p>
 			<ul>
 				{todos.map((todo) => (
 					<li key={todo.id}>
