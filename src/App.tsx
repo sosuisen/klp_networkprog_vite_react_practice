@@ -27,9 +27,17 @@ const App = () => {
 		);
 	};
 
+	const removeFirstTodo = () => {
+		setTodos((prevTodos) => prevTodos.slice(1));
+	};
+
 	return (
 		<div>
 			<h1>ToDoリスト</h1>
+			<p>現在のToDoは{todos.length}個。</p>
+			<button type="button" onClick={removeFirstTodo}>
+				先頭のToDoを削除
+			</button>
 			<ul>
 				{todos.map((todo) => (
 					// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
